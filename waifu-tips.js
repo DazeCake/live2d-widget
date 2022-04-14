@@ -66,7 +66,6 @@ function loadWidget(config) {
 			}, 20000)
 		}
 	}, 1000)
-
 	;(function registerEventListener() {
 		document.querySelector('#waifu-tool .fa-comment').addEventListener('click', showHitokoto)
 		document.querySelector('#waifu-tool .fa-paper-plane').addEventListener('click', () => {
@@ -110,7 +109,6 @@ function loadWidget(config) {
 			if (!document.hidden) showMessage('哇，你终于回来了～', 6000, 9)
 		})
 	})()
-
 	;(function welcomeMessage() {
 		let text
 		if (location.pathname === '/') {
@@ -181,7 +179,7 @@ function loadWidget(config) {
 		if (modelId === null) {
 			// 首次访问加载 指定模型 的 指定材质
 			modelId = 2 // 模型 ID
-			modelTexturesId = 11 // 材质 ID
+			modelTexturesId = 12 // 材质 ID
 		}
 		loadModel(modelId, modelTexturesId)
 		fetch(waifuPath)
